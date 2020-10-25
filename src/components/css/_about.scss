@@ -1,0 +1,84 @@
+// about //
+.about-bg {
+  background-image: url(../img/stickies-2852375_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 450px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.who-we-are {
+  background-color: #f1f1f1;
+  padding: 50px 0px;
+}
+
+.what-we-do {
+  padding: 10px 0px;
+  background-color: #f1f1f1;
+
+  #{&}-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+
+    h5 {
+      padding-top: 10px;
+    }
+  }
+}
+
+.how-we-do {
+  padding: 10px 0px;
+  background-color: #f1f1f1;
+
+  #{&}-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+
+    h5 {
+      padding-top: 10px;
+    }
+  }
+}
+
+.pricing {
+  padding: 10px 0px;
+  background-color: #f1f1f1;
+
+  #{&}-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.summary {
+  padding: 10px 0px;
+  background-color: #f1f1f1;
+
+  #{&}-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+
+    p {
+      text-align: center;
+    }
+  }
+}

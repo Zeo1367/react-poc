@@ -1,0 +1,117 @@
+.list-with-us-bg {
+  background-image: url("../img/list-bg.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 40vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .list-us-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, -50%);
+    padding-left: 150px;
+    color: white;
+    text-transform: uppercase;
+
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+  }
+
+}
+
+.list-form {
+  min-height: 60vh;
+  padding: 15px 0px;
+  color: white;
+  background: #008edd;
+
+  .list-form-title {
+    text-align: center;
+    font-family: cursive;
+  }
+
+  label {
+    width: 100%;
+    margin: 0;
+  }
+
+  .list-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: #01FF70;
+  }
+
+  ::placeholder {
+    color: rgb(201, 226, 226);
+  }
+
+  .list-form-submit {
+    overflow: hidden;
+    color: white;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    // background: #4EC1E0;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 100%);
+    }
+  }
+
+  .error-message {
+    color: #E7FF47;
+  }
+
+  // change autocomplete styles in webkit
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    // border: none;
+    // border-bottom: 1px solid white;
+    -webkit-text-fill-color: rgb(176, 250, 250);
+    box-shadow: 0 0 0 0 transparent inset;
+    -webkit-box-shadow: 0 0 0 0 transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  // to hide spin box
+  //  input[type="number"]::-webkit-outer-spin-button,
+  //  input[type="number"]::-webkit-inner-spin-button {
+  //      -webkit-appearance: none;
+  //      margin: 0;
+  //  }
+  //  input[type="number"] {
+  //      -moz-appearance: textfield;
+  //  }
+}
